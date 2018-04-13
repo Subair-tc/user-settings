@@ -1,0 +1,891 @@
+/*----toggle bootstrap---*/
+
+.checkbox label .toggle,
+.checkbox-inline .toggle {
+    margin-left: -20px;
+    margin-right: 5px;
+}
+
+.toggle {
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle input[type=checkbox] {
+    display: none;
+}
+
+.toggle-group {
+    position: absolute;
+    width: 200%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: left .35s;
+    -webkit-transition: left .35s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.toggle.off .toggle-group {
+    left: -100%;
+}
+
+.toggle-on {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.toggle-off {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.toggle-handle {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    width: 0;
+    border-width: 0 1px;
+}
+
+.toggle.btn {
+    min-width: 59px;
+    min-height: 34px;
+}
+
+.toggle-on.btn {
+    padding-right: 24px;
+}
+
+.toggle-off.btn {
+    padding-left: 24px;
+}
+
+.toggle.btn-lg {
+    min-width: 79px;
+    min-height: 45px;
+}
+
+.toggle-on.btn-lg {
+    padding-right: 31px;
+}
+
+.toggle-off.btn-lg {
+    padding-left: 31px;
+}
+
+.toggle-handle.btn-lg {
+    width: 40px;
+}
+
+.toggle.btn-sm {
+    min-width: 50px;
+    min-height: 30px;
+}
+
+.toggle-on.btn-sm {
+    padding-right: 20px;
+}
+
+.toggle-off.btn-sm {
+    padding-left: 20px;
+}
+
+.toggle.btn-xs {
+    min-width: 35px;
+    min-height: 22px;
+}
+
+.toggle-on.btn-xs {
+    padding-right: 12px;
+}
+
+.toggle-off.btn-xs {
+    padding-left: 12px;
+}
+
+
+/*----- Tabs -----*/
+
+.mysettings-tabs {
+    background-color: #444444;
+    float: left;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}
+
+
+/*----- Tab Links -----*/
+
+
+/* Clearfix */
+
+.mysettings-tabs .tab-links {
+    float: left;
+    width: 250px;
+}
+
+.mysettings-tabs .tab-links ul {
+    list-style: none;
+    text-align: center;
+}
+
+.mysettings-tabs .tab-links ul li {
+    margin: 8px 0;
+}
+
+.mysettings-tabs .tab-links ul li.active,
+.mysettings-tabs .tab-links ul li:hover {
+    border-width: 1px 0 1px 8px !important;
+}
+
+.mysettings-tabs .tab-links ul li a,
+.mysettings-tabs .tab-links ul li a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 15px 5px;
+    font-family: "Gibson-Light";
+    font-size: 18px;
+    font-weight: bold;
+    outline: medium none;
+}
+
+.mysettings-tabs .tab-links ul li.active a {
+    color: #b00815 !important;
+}
+
+.mysettings-tabs .tab-links ul li:hover {
+    border-left: 8px solid #333;
+}
+
+.mysettings-tabs .tab-links ul li a:hover {
+    color: #ffffff;
+}
+
+.mysettings-tabs .tab-links ul li.selected {
+    border-right: none;
+    background-color: #fff;
+    border-left: 8px solid #006699;
+}
+ 
+.mysettings-tabs li.active a,
+.mysettings-tabs li.active a:hover {
+    background: #fff;
+    color: #4c4c4c;
+}
+
+
+/*----- Content of Tabs -----*/
+ 
+
+.mysettings-tabs .tab-content {
+    background-color: #fff;
+    margin-left: 250px;
+    min-height: 850px; 
+}
+
+.mysettings-tabs .tab {
+    width: 100%;
+    float: left;
+    padding: 15px 20px 20px;
+    background: #ffffff;
+}
+
+.mysettings-tabs .tab {
+    display: none;
+}
+
+.mysettings-tabs .tab.active {
+    display: block;
+}
+
+
+/*----- Accordion -----*/
+
+.mysettings-tabs .accordion,
+.mysettings-tabs .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mysettings-tabs .accordion {
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .25);
+    border-radius: 3px;
+    background: #f7f7f7;
+}
+
+
+/*----- Section Titles -----*/
+
+.mysettings-tabs .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a; 
+    transition: all linear .15s; 
+    font-size: 20px;
+    font-family: "Gibson-Light";
+    color: #000;
+}
+
+.mysettings-tabs #drop4 {
+    color: #10AD97;
+}
+
+
+.mysettings-tabs .accordion-section-title.active {
+    background: #e4e8eb none repeat scroll 0 0;
+    border-bottom: medium none !important;
+    color: #10ad97;
+    text-decoration: none;
+}
+
+.mysettings-tabs .accordion-section-title:hover { 
+    text-decoration: none;
+    background: #E4E8EB;
+    color: #000;
+}
+
+.mysettings-tabs .accordion-section:last-child .accordion-section-title { 
+    border-bottom: 1px solid #1a1a1a;
+}
+
+
+/*----- Section Content -----*/
+
+.accordion-section-content {
+    padding: 15px;
+    display: none;
+    border-bottom: 1px solid #000;
+}
+
+
+/*---------Account Settings -----*/
+
+.mysettings-tabs span.error {
+    color: #C00;
+    font-size: 15px;
+    float:left;
+    width:100%;
+}
+
+
+.mysettings-tabs .form-group .load {
+    left: 0;
+    position: absolute;
+    top: 28px;
+    width: 12px;
+}
+
+
+.mysettings-tabs .tab-links ul {
+    padding: 20px 0px !important;
+    margin: 0px !important;
+    width: 100%;
+}
+ 
+.mysettings-tabs .tab-content .accordion {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.mysettings-tabs .tab-content a.accordion-section-title {
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid #D6DEE1 !important;
+    outline: none;
+    padding-left: 0px;
+}
+
+.mysettings-tabs input[type="text"],
+.mysettings-tabs input[type="password"],
+.mysettings-tabs input[type="email"],
+.mysettings-tabs input[type="url"],
+.mysettings-tabs input[type="number"],
+.mysettings-tabs textarea,
+.mysettings-tabs select {
+    border-radius: 0px;
+    border: 1px solid #9AA9B0;
+    box-shadow: none;
+    background: none;
+    height: 38px;
+    padding: 6px 12px;
+}
+
+.mysettings-tabs input[type="text"],
+.mysettings-tabs input[type="password"],
+.mysettings-tabs input[type="email"],
+.mysettings-tabs input[type="url"],
+.mysettings-tabs input[type="number"],
+.mysettings-tabs textarea,
+.mysettings-tabs select {
+    border-radius: 0px;
+    border: 1px solid #9AA9B0;
+    box-shadow: none;
+    background: none;
+    height: 38px;
+    padding: 6px 12px;
+}
+
+.mysettings-tabs .accordion-section-content {
+    border-bottom: none !important;
+    float: left;
+    width: 100%;
+}
+
+
+.mysettings-tabs .accordion-section-title span.glyphicon-menu-right {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.mysettings-tabs .accordion-section-title.active span.glyphicon-menu-right {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.mysettings-tabs .tab-links ul li a {
+    text-align: left !important;
+    padding: 15px 5px 15px 60px !important;
+    font-family: 'Gibson-Light';
+}
+
+
+
+/*Dashboard Settings*/
+
+#dashSet {}
+
+.toggle {
+    margin-left: 40px;
+}
+
+#dashSet .checkbox-inline {
+    font-family: 'gibson-light';
+    font-size: 18px;
+}
+
+#dashsMedia label,
+#dashTrails label,
+#dashVotes label,
+#dashTopcon label,
+#privacyFil label {
+    font-family: gibson-light;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#genSettings label.checkbox-inline, #notiSettings  label.checkbox-inline {
+    font-family: gibson-light;
+    font-size: 18px;
+    padding-left: 0 !important;
+    width: 50%;
+	float:left;
+	line-height: 22px;
+}
+
+#genSettings .toggle .btn-primary, #notiSettings .toggle .btn-primary {
+    background: #b00815 !important;
+    border: 1px solid #b00815 !important;
+}
+
+#genSettings .toggle , #notiSettings .toggle {
+    border: 1px solid #b00815 !important;
+}
+
+#genSettings h3, #notiSettings h3 {
+    border-bottom: 1px solid #d6dee1;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: "Gibson-Light";
+    font-size: 20px;
+}
+
+#dashSet .toggle .btn-primary {
+    background: #84c659 !important;
+    border: 1px solid #84c659 !important;
+}
+
+#dashSet .toggle {
+    border: 1px solid #84c659 !important;
+}
+
+#genSettings .footer-btn-row, #notiSettings .footer-btn-row  {
+    padding-bottom: 20px;
+}
+
+.mysettings-tabs .tab-links ul li a:hover {
+    border: none !important;
+}
+
+.mysettings-tabs .tab-links ul li:hover {
+    border: none !important;
+}
+
+.settings-page-head a {
+    color: #10ad97 !important;
+}
+
+.mysettings-tabs .toggle-group .btn {
+    border-radius: 0px !important;
+}
+
+.mysettings-tabs .tab-links ul li .icon-circle {
+    border: 1px solid #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    height: 35px;
+    margin-left: 13px;
+    margin-top: 13px;
+    width: 35px;
+    color: #ffffff;
+}
+
+.mysettings-tabs #myrareprofile #profilepic {
+    background: #259fd9;
+    color: #ffffff;
+    padding: 3px 10px;
+    position: absolute;
+    width: 150px;
+    top: -15px;
+}
+
+#rareProSet img.avatar {
+    width: 150px;
+    margin-top: 15px;
+}
+
+.mysettings-tabs #myrareprofile img {
+    width: 150px;
+}
+
+.mysettings-tabs .tab-links ul li .icon-circle i {
+    color: #ffffff !important;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.mysettings-tabs .tab-links ul li.active .icon-circle {
+    border: 1px solid #b00815;
+    color: #b00815;
+}
+
+.mysettings-tabs .tab-links ul li.active .icon-circle i {
+    color: #b00815 !important;
+}
+
+#rareProSet {
+    margin-bottom: 20px;
+}
+
+#dashSet .checkbox-inline {
+    padding-left: 0px !important;
+}
+
+#dashSet h3,
+#rareProSet h3,
+#privacySet h3,
+.mysettings-tabs #rareteam h3,
+#blocklist_tab h3 {
+    border-bottom: 1px solid #d6dee1;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: "Gibson-Light";
+    font-size: 20px;
+}
+
+#blocklist_tab {
+    width: 100%;
+}
+
+#blocklist_tab ul#members-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#blocklist_tab ul#members-list li {
+    margin-bottom: 15px;
+}
+
+#blocklist_tab ul#members-list img.avatar {
+    width: 55px;
+}
+
+#blocklist_tab .item-avatar {
+    float: left;
+    margin-right: 15px;
+}
+
+#blocklist_tab .item {
+    float: left;
+    margin-right: 15px;
+}
+
+#blocklist_tab .action {
+    float: left;
+}
+
+.rarePro_setImg {
+    font-size: 13px;
+    margin-top: 0;
+    position: absolute;
+    z-index: 2500;
+}
+
+.rarePro_setImg a {
+    background: rgba(0, 0, 0, 0) url("../images/profile-photo-bg.png") no-repeat scroll 0 0;
+    color: #fff;
+    height: 40px;
+    margin-left: -39px;
+    margin-top: 132px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 129px !important;
+    z-index: 2500;
+}
+
+#rare_team_settings .nav.nav-tabs {
+    float: left;
+    width: 100%;
+}
+
+#rare_team_settings ul {
+    float: left;
+    width: 100%;
+}
+
+#rare_team_settings .tab-content {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+}
+
+#rare_team_settings #group-create-body  .rareteam-name-update {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#rare_team_settings #group-create-body  .rareteam-mission-update {
+    float: left;
+    margin-bottom:5px;
+    width: 100%;
+}
+
+#rare_team_settings #group-create-body label {
+    float: left;
+    width: 20%;
+}
+
+.ui-button.btn-primary.submit#edit_group_set {
+    background-color: #84c659 !important;
+    background-image: none;
+    border: medium none;
+    border-radius: 0 !important;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 155px;
+}
+
+#userdash .form-group .load {
+    left: 0;
+    position: absolute;
+    top: 28px;
+    width: 12px;
+}
+
+.mysettings-tabs #my-team .load {
+    bottom: 17px !important;
+    left: -18px !important;
+    position: absolute;
+    width: 12px;
+	top:auto !important;
+}
+
+#accSet #accordion-2 .load {
+    left: 0;
+    position: absolute;
+    top: 28px;
+    width: 12px;
+}
+
+.dname_log {
+    padding: 40px !important;
+}
+
+.mysettings-tabs #rareteam .rareTeam-cont {
+    margin-bottom: 0px !important;
+}
+
+.mysettings-tabs #rareteam .rareTeam-cont {
+    margin-bottom: 0px !important;
+}
+
+#rare_team_settings #group-create-body label {
+    float: left;
+    width: 100%;
+    font-family: gibson-light;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.mysettings-tabs #rareteam textarea {
+    height: 100px;
+}
+
+.rareQlist-row {
+    width: 100%;
+    float: left;
+}
+
+.rareQlist-row input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.settings-confbox {
+    bottom: 90px;
+    left: 28px;
+    position: absolute;
+}
+
+.mysettings-tabs .tab-content a.accordion-section-title:focus {
+    outline: none !important;
+}
+#notiSettings > h2 {
+    font-size: 18px;
+	text-transform:lowercase;
+}
+
+
+/*---news settings---*/
+.settings-header a{color: #870011 !important;}
+.settings-header{position:relative;}
+.settings-header a {position:absolute; top:0px; right:15px;}
+#us_profile_privacy_form  .form-group label{margin-bottom:0px;font-family: "Gibson-semibold"; font-weight:normal;}
+#us_profile_privacy_form  .form-group .visible-cont label{font-family: "Gibson-regular"; position: relative; top: -3px;}
+#us_profile_privacy_form .social-media-row input[type=checkbox]{position: relative; top: 2px;}
+#us_profile_privacy_form  .form-control{border:1px solid #98a8b4; color:#323e48; height:38px !important; margin-top:-2px;}
+#us_profile_privacy_form  textarea.form-control{min-height: 68px;}
+#us_profile_privacy_form h2, #notiSettings h2{color:#AEA99D; font-size:20px; margin:10px 0px 5px;}
+#rareProSet h3{margin-bottom:0px; padding-bottom: 15px;}
+#rareProSet{margin-bottom:0px;}
+#us_profile_privacy_form  .form-group{margin-bottom: 6px;}
+.social-media-row .form-group {margin-bottom:8px;}
+.social-media-row .fa{font-size: 16px; position: relative; top: 1px;}
+#us_profile_privacy_form .social-media-row .form-control{margin-top:0px;}
+.full-width-label{width:100%; float:left;}
+.visible-header p{font-size: 16px; margin:0px !important;}
+#profile_privacy{ cursor: inherit;}
+.not-visible-cont{padding-top:30px; text-align:center;}
+
+.age-row{padding-top:5px;}
+
+.basics-row  input[type=checkbox], .lcoation  input[type=checkbox]{ margin-top: 40px; margin-right: 5px;}
+
+.button-gray{background:#AEA99D; color:#ffffff; padding:5px 20px;font-size: 18px; margin-top:15px;border-radius:0px !important;min-width: 130px;line-height: 30px;}
+.button-green{background:#D0021B; color:#ffffff; margin-right:15px; padding:5px 20px;font-size: 18px; margin-top:15px; border-radius:0px !important;min-width: 130px;line-height: 30px;}
+.button-gray:hover, .button-green:hover{color:#ffffff !important; text-decoration:none !important;}
+
+input.button-gray{font-size:18px !important;}
+
+.mysettings-tabs{overflow-x:hidden;}
+#us_profile_privacy_form #us_year{width: 28%; margin-right: 1%; float:left;padding: 5px 20px 5px 3px;}
+#us_profile_privacy_form #month{width: 45%;margin-right: 1%; float:left;padding: 5px 20px 5px 3px;}
+#us_profile_privacy_form #day{float: left; width: 25%;padding: 5px 20px 5px 3px;}
+
+.basics-row, .lcoation{border-top:1px solid #cbd3d9; margin-top:15px;}
+.visible-header{padding-top:15px;}
+
+.basics-row .age-row input[type="checkbox"]{margin-top: 5px;}
+.mysettings-tabs .rareTeam-cont .tab-content{padding:0px;}
+h3.settings-first-head{
+	border-bottom: 1px solid #d6dee1;
+    font-family: "Gibson-Light";
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+#us_update_email_form{margin:15px 0px; padding-bottom:50px; border-bottom:1px solid #cbd3d9;}
+.settings-descr{
+	font-family: gibson-semibold;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 5px 0 0 2px;
+    padding: 0;
+	}
+#payment-form .required{padding-bottom:0px !important}
+.mysettings-tabs img.avatar{
+	border-radius: 50%;
+    height: auto;
+    max-height: 150px;
+    max-width: 150px;
+    width: 100%;
+	border: 4px solid #d6dee1;
+	object-fit: cover;
+}
+
+.profile-pic-wrap{position:relative;width:100%; height:auto; max-width:150px; margin:20px auto 0;}
+.profile-pic-wrap a.settings-profile-pic{
+    background:none;
+    bottom: 3px;
+    color: #fff;
+    display: block;
+    height: auto;
+    left: 12px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 84%;
+    z-index: 9999;
+}
+.profile-pic-wrap a.settings-profile-pic img{width:100%; height:auto;}
+#genSettings h3, #notiSettings h3{margin:0px !important; padding-bottom:15px;}
+.mysettings-tabs .tab-links ul li .icon-circle i {
+    color: #ffffff;
+    font-size: 20px  !important;
+    line-height: 33px !important;
+}
+
+.rare-team-settings-new h3{margin:0px !important;}
+.rare-team-settings-new #group-create-body{margin-top:15px !important;}
+.rare-team-settings-new #group-create-body label{font-family: "Gibson-semibold" !important  ;font-size: 15px!important; font-weight: normal !important;}
+.rare-team-settings-new #group-create-body button.ui-button{margin-top:0px !important;}
+#notiSettings button.ui-button{margin-top:0px !important;}
+#notiSettings label.checkbox-inline{
+	font-family: "gibson-semibold" !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    margin-top: 5px !important;
+	}
+#us_update_password_form .required{padding-bottom:0px !important;}
+.visible-header-mobile{display:none;}
+
+/*---new settings overwrite start ---*/
+/*
+.mysettings-tabs input.btn, .mysettings-tabs button.ui-button {
+    border: medium none !important;
+    font-size: 18px !important;
+    height: auto !important;
+	width: auto !important;
+    margin-right: 10px !important;
+    margin-top: 15px !important;
+    min-width: 130px !important;
+    padding: 5px 20px !important;
+	line-height:30px !important;
+}
+*/
+
+.mysettings-tabs .tab-content #accSet {
+    margin-top: 0 !important;
+}
+
+.mysettings-tabs .footer-btn .ui-button {
+	min-width: 130px !important;
+}
+
+
+/*---new settings overwrite end ---*/
+
+
+@media screen and (max-width: 767px) {
+	.visible-header-mobile{display:inline-block; position: relative; top: -2px;}
+	.yes-label{display:none;}
+	.basics-row input[type="checkbox"], .lcoation input[type="checkbox"] {margin-right: 5px; margin-top: 8px;}
+	.visible-cont{text-align:left;}
+	.basics-row .age-row input[type="checkbox"] { margin-top: 8px;}
+	.settings-header a.view-profile-settings { bottom: -40px; top: auto;}
+	#us_profile_privacy_form #day { width: 26%;}
+	#us_profile_privacy_form #month {width: 40%;}
+	#us_profile_privacy_form #us_year { width: 32%;}
+	#us_profile_privacy_form .form-control { padding-left: 5px; }
+	.mysettings-tabs input.btn.button-gray{margin-right:0px !important;  padding: 5px 8px !important;}
+	.button-gray{margin-right: 10px !important;min-width: 100px !important; padding: 5px 8px !important;}
+	.button-green{min-width: 120px !important; padding: 5px 8px !important;}
+	.mysettings-tabs #us_update_password_form  input.btn.button-gray{min-width: 80px !important;}
+	#menu ul li a .menu-icon {min-width: 45px;}
+	#menu ul li.mysettings a .menu-icon i{font-size: 30px; line-height: 52px; margin-left: 3px; color:#3f3f3f;}
+	ul.mob-subnav-cont-settings li a:hover, ul.mob-subnav-cont-settings li.active a { background: #3f3f3f !important; color: #ffffff;  border-radius: 5px;}
+	#menu ul li.active ul.mob-subnav-cont-settings li a:hover, #menu ul li.active ul.mob-subnav-cont-settings li.active a { background: #3f3f3f !important; color: #ffffff;  border-radius: 5px;}
+	ul.mob-subnav-cont-settings li a i{ font-size: 24px;}
+    .profile-privacy-tab i{ margin-left: 3px;}
+	.login-tab i{ margin-left: 3px;}
+	.send-question-tab i{ margin-left: 5px;}
+	.settings-page-wrap .rareCurate-nav{margin-bottom: 10px; margin-top: 0;}
+	.settings-page-wrap .cont-head{display:none;}
+	.settings-page-wrap .mysettings-tabs .tab-links {display:none;}
+}
+
+.settings-footer-bolck{ position:relative;float:left;padding-right:40px;}
+
+.settings-spinner {
+    color: #D0021B;
+    position: absolute;
+    right: 2px;
+	top: 27px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.mysettings-tabs .form-group label{margin-bottom: 0px;}
+.mysettings-tabs select{background:url("../images/select-arrow.png") no-repeat scroll right 15px !important; background-size: auto 8px !important;}
+
+.settings-footer-bolck .button-gray{min-width:auto !important;}
+
+
+
+
+
+
